@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88D2E0771DFCCBEF00947DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */; };
+		88D2E0791DFCCBEF00947DA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0781DFCCBEF00947DA4 /* ViewController.swift */; };
+		88D2E07B1DFCCBEF00947DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D2E07A1DFCCBEF00947DA4 /* Assets.xcassets */; };
+		88D2E07E1DFCCBEF00947DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D2E07C1DFCCBEF00947DA4 /* Main.storyboard */; };
+		88D2E0891DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0881DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift */; };
+		88D2E0941DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0931DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88D2E0851DFCCBEF00947DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88D2E06B1DFCCBEE00947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D2E0721DFCCBEE00947DA4;
+			remoteInfo = EvernoteTagHelper;
+		};
+		88D2E0901DFCCBEF00947DA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88D2E06B1DFCCBEE00947DA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88D2E0721DFCCBEE00947DA4;
+			remoteInfo = EvernoteTagHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88D2E0731DFCCBEF00947DA4 /* EvernoteTagHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvernoteTagHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88D2E0781DFCCBEF00947DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88D2E07A1DFCCBEF00947DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88D2E07D1DFCCBEF00947DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88D2E07F1DFCCBEF00947DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D2E0841DFCCBEF00947DA4 /* EvernoteTagHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvernoteTagHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D2E0881DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvernoteTagHelperTests.swift; sourceTree = "<group>"; };
+		88D2E08A1DFCCBEF00947DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D2E08F1DFCCBEF00947DA4 /* EvernoteTagHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvernoteTagHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D2E0931DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvernoteTagHelperUITests.swift; sourceTree = "<group>"; };
+		88D2E0951DFCCBEF00947DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88D2E0701DFCCBEE00947DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E0811DFCCBEF00947DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E08C1DFCCBEF00947DA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88D2E06A1DFCCBEE00947DA4 = {
+			isa = PBXGroup;
+			children = (
+				88D2E0751DFCCBEF00947DA4 /* EvernoteTagHelper */,
+				88D2E0871DFCCBEF00947DA4 /* EvernoteTagHelperTests */,
+				88D2E0921DFCCBEF00947DA4 /* EvernoteTagHelperUITests */,
+				88D2E0741DFCCBEF00947DA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88D2E0741DFCCBEF00947DA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88D2E0731DFCCBEF00947DA4 /* EvernoteTagHelper.app */,
+				88D2E0841DFCCBEF00947DA4 /* EvernoteTagHelperTests.xctest */,
+				88D2E08F1DFCCBEF00947DA4 /* EvernoteTagHelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88D2E0751DFCCBEF00947DA4 /* EvernoteTagHelper */ = {
+			isa = PBXGroup;
+			children = (
+				88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */,
+				88D2E0781DFCCBEF00947DA4 /* ViewController.swift */,
+				88D2E07A1DFCCBEF00947DA4 /* Assets.xcassets */,
+				88D2E07C1DFCCBEF00947DA4 /* Main.storyboard */,
+				88D2E07F1DFCCBEF00947DA4 /* Info.plist */,
+			);
+			path = EvernoteTagHelper;
+			sourceTree = "<group>";
+		};
+		88D2E0871DFCCBEF00947DA4 /* EvernoteTagHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				88D2E0881DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift */,
+				88D2E08A1DFCCBEF00947DA4 /* Info.plist */,
+			);
+			path = EvernoteTagHelperTests;
+			sourceTree = "<group>";
+		};
+		88D2E0921DFCCBEF00947DA4 /* EvernoteTagHelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88D2E0931DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift */,
+				88D2E0951DFCCBEF00947DA4 /* Info.plist */,
+			);
+			path = EvernoteTagHelperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88D2E0721DFCCBEE00947DA4 /* EvernoteTagHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D2E0981DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelper" */;
+			buildPhases = (
+				88D2E06F1DFCCBEE00947DA4 /* Sources */,
+				88D2E0701DFCCBEE00947DA4 /* Frameworks */,
+				88D2E0711DFCCBEE00947DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvernoteTagHelper;
+			productName = EvernoteTagHelper;
+			productReference = 88D2E0731DFCCBEF00947DA4 /* EvernoteTagHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88D2E0831DFCCBEF00947DA4 /* EvernoteTagHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D2E09B1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperTests" */;
+			buildPhases = (
+				88D2E0801DFCCBEF00947DA4 /* Sources */,
+				88D2E0811DFCCBEF00947DA4 /* Frameworks */,
+				88D2E0821DFCCBEF00947DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88D2E0861DFCCBEF00947DA4 /* PBXTargetDependency */,
+			);
+			name = EvernoteTagHelperTests;
+			productName = EvernoteTagHelperTests;
+			productReference = 88D2E0841DFCCBEF00947DA4 /* EvernoteTagHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88D2E08E1DFCCBEF00947DA4 /* EvernoteTagHelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D2E09E1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperUITests" */;
+			buildPhases = (
+				88D2E08B1DFCCBEF00947DA4 /* Sources */,
+				88D2E08C1DFCCBEF00947DA4 /* Frameworks */,
+				88D2E08D1DFCCBEF00947DA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88D2E0911DFCCBEF00947DA4 /* PBXTargetDependency */,
+			);
+			name = EvernoteTagHelperUITests;
+			productName = EvernoteTagHelperUITests;
+			productReference = 88D2E08F1DFCCBEF00947DA4 /* EvernoteTagHelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88D2E06B1DFCCBEE00947DA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Jesse Rosalia";
+				TargetAttributes = {
+					88D2E0721DFCCBEE00947DA4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					88D2E0831DFCCBEF00947DA4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88D2E0721DFCCBEE00947DA4;
+					};
+					88D2E08E1DFCCBEF00947DA4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 88D2E0721DFCCBEE00947DA4;
+					};
+				};
+			};
+			buildConfigurationList = 88D2E06E1DFCCBEE00947DA4 /* Build configuration list for PBXProject "EvernoteTagHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88D2E06A1DFCCBEE00947DA4;
+			productRefGroup = 88D2E0741DFCCBEF00947DA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88D2E0721DFCCBEE00947DA4 /* EvernoteTagHelper */,
+				88D2E0831DFCCBEF00947DA4 /* EvernoteTagHelperTests */,
+				88D2E08E1DFCCBEF00947DA4 /* EvernoteTagHelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88D2E0711DFCCBEE00947DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D2E07B1DFCCBEF00947DA4 /* Assets.xcassets in Resources */,
+				88D2E07E1DFCCBEF00947DA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E0821DFCCBEF00947DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E08D1DFCCBEF00947DA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88D2E06F1DFCCBEE00947DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D2E0791DFCCBEF00947DA4 /* ViewController.swift in Sources */,
+				88D2E0771DFCCBEF00947DA4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E0801DFCCBEF00947DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D2E0891DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D2E08B1DFCCBEF00947DA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D2E0941DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88D2E0861DFCCBEF00947DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88D2E0721DFCCBEE00947DA4 /* EvernoteTagHelper */;
+			targetProxy = 88D2E0851DFCCBEF00947DA4 /* PBXContainerItemProxy */;
+		};
+		88D2E0911DFCCBEF00947DA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88D2E0721DFCCBEE00947DA4 /* EvernoteTagHelper */;
+			targetProxy = 88D2E0901DFCCBEF00947DA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		88D2E07C1DFCCBEF00947DA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88D2E07D1DFCCBEF00947DA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88D2E0961DFCCBEF00947DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88D2E0971DFCCBEF00947DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		88D2E0991DFCCBEF00947DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		88D2E09A1DFCCBEF00947DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		88D2E09C1DFCCBEF00947DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvernoteTagHelper.app/Contents/MacOS/EvernoteTagHelper";
+			};
+			name = Debug;
+		};
+		88D2E09D1DFCCBEF00947DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvernoteTagHelper.app/Contents/MacOS/EvernoteTagHelper";
+			};
+			name = Release;
+		};
+		88D2E09F1DFCCBEF00947DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EvernoteTagHelper;
+			};
+			name = Debug;
+		};
+		88D2E0A01DFCCBEF00947DA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EvernoteTagHelperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = EvernoteTagHelper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88D2E06E1DFCCBEE00947DA4 /* Build configuration list for PBXProject "EvernoteTagHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D2E0961DFCCBEF00947DA4 /* Debug */,
+				88D2E0971DFCCBEF00947DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D2E0981DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D2E0991DFCCBEF00947DA4 /* Debug */,
+				88D2E09A1DFCCBEF00947DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88D2E09B1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D2E09C1DFCCBEF00947DA4 /* Debug */,
+				88D2E09D1DFCCBEF00947DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88D2E09E1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D2E09F1DFCCBEF00947DA4 /* Debug */,
+				88D2E0A01DFCCBEF00947DA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88D2E06B1DFCCBEE00947DA4 /* Project object */;
+}
