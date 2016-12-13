@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DCCF99957937B8ECCFBAEEA /* Pods_EvernoteTagHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B51CB5CCD61297B851ED6D4 /* Pods_EvernoteTagHelper.framework */; };
+		5EB26D555CDC7B5E36DE0B8C /* Pods_EvernoteTagHelperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CCA7A3A6B81F996D1446753 /* Pods_EvernoteTagHelperTests.framework */; };
 		88A3893F1DFFA20E0086C2DA /* AccessabilityCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */; };
 		88A389411DFFD2220086C2DA /* PopupPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A389401DFFD2220086C2DA /* PopupPanel.swift */; };
 		88D2E0771DFCCBEF00947DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */; };
@@ -15,6 +17,7 @@
 		88D2E07E1DFCCBEF00947DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88D2E07C1DFCCBEF00947DA4 /* Main.storyboard */; };
 		88D2E0891DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0881DFCCBEF00947DA4 /* EvernoteTagHelperTests.swift */; };
 		88D2E0941DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0931DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift */; };
+		B2FB01BB55D3CDF3B4094046 /* Pods_EvernoteTagHelperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEE023277DB756982C4D8EC /* Pods_EvernoteTagHelperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B51CB5CCD61297B851ED6D4 /* Pods_EvernoteTagHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvernoteTagHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FD99A0C44BD494E8579337 /* Pods-EvernoteTagHelperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelperTests/Pods-EvernoteTagHelperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AEE023277DB756982C4D8EC /* Pods_EvernoteTagHelperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvernoteTagHelperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCA7A3A6B81F996D1446753 /* Pods_EvernoteTagHelperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvernoteTagHelperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8368A332BE1DAEEB2DB32CC8 /* Pods-EvernoteTagHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelper/Pods-EvernoteTagHelper.release.xcconfig"; sourceTree = "<group>"; };
+		87FFFF73E4B98529CEA225A6 /* Pods-EvernoteTagHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelper/Pods-EvernoteTagHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessabilityCursor.swift; sourceTree = "<group>"; };
 		88A389401DFFD2220086C2DA /* PopupPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupPanel.swift; sourceTree = "<group>"; };
+		88A389451DFFE20D0086C2DA /* EvernoteTagHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EvernoteTagHelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		88D2E0731DFCCBEF00947DA4 /* EvernoteTagHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvernoteTagHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D2E0781DFCCBEF00947DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +59,9 @@
 		88D2E08F1DFCCBEF00947DA4 /* EvernoteTagHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvernoteTagHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D2E0931DFCCBEF00947DA4 /* EvernoteTagHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvernoteTagHelperUITests.swift; sourceTree = "<group>"; };
 		88D2E0951DFCCBEF00947DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B2E129FF02BEA8C65DE62C /* Pods-EvernoteTagHelperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelperUITests/Pods-EvernoteTagHelperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6E78564EF0AB3A8181D2CA5 /* Pods-EvernoteTagHelperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelperUITests/Pods-EvernoteTagHelperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9C7D632498CC19F57773760 /* Pods-EvernoteTagHelperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvernoteTagHelperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvernoteTagHelperTests/Pods-EvernoteTagHelperTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DCCF99957937B8ECCFBAEEA /* Pods_EvernoteTagHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB26D555CDC7B5E36DE0B8C /* Pods_EvernoteTagHelperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +85,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FB01BB55D3CDF3B4094046 /* Pods_EvernoteTagHelperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39F120F183A2A0618ED753E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B51CB5CCD61297B851ED6D4 /* Pods_EvernoteTagHelper.framework */,
+				6CCA7A3A6B81F996D1446753 /* Pods_EvernoteTagHelperTests.framework */,
+				4AEE023277DB756982C4D8EC /* Pods_EvernoteTagHelperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88D2E06A1DFCCBEE00947DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,8 @@
 				88D2E0871DFCCBEF00947DA4 /* EvernoteTagHelperTests */,
 				88D2E0921DFCCBEF00947DA4 /* EvernoteTagHelperUITests */,
 				88D2E0741DFCCBEF00947DA4 /* Products */,
+				D18CDDD3FB43187237BC511B /* Pods */,
+				39F120F183A2A0618ED753E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +134,7 @@
 				88D2E07F1DFCCBEF00947DA4 /* Info.plist */,
 				88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */,
 				88A389401DFFD2220086C2DA /* PopupPanel.swift */,
+				88A389451DFFE20D0086C2DA /* EvernoteTagHelper-Bridging-Header.h */,
 			);
 			path = EvernoteTagHelper;
 			sourceTree = "<group>";
@@ -128,6 +157,19 @@
 			path = EvernoteTagHelperUITests;
 			sourceTree = "<group>";
 		};
+		D18CDDD3FB43187237BC511B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87FFFF73E4B98529CEA225A6 /* Pods-EvernoteTagHelper.debug.xcconfig */,
+				8368A332BE1DAEEB2DB32CC8 /* Pods-EvernoteTagHelper.release.xcconfig */,
+				49FD99A0C44BD494E8579337 /* Pods-EvernoteTagHelperTests.debug.xcconfig */,
+				E9C7D632498CC19F57773760 /* Pods-EvernoteTagHelperTests.release.xcconfig */,
+				D1B2E129FF02BEA8C65DE62C /* Pods-EvernoteTagHelperUITests.debug.xcconfig */,
+				E6E78564EF0AB3A8181D2CA5 /* Pods-EvernoteTagHelperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D2E0981DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelper" */;
 			buildPhases = (
+				25F2FFD3534E9537D92629E9 /* [CP] Check Pods Manifest.lock */,
 				88D2E06F1DFCCBEE00947DA4 /* Sources */,
 				88D2E0701DFCCBEE00947DA4 /* Frameworks */,
 				88D2E0711DFCCBEE00947DA4 /* Resources */,
+				4DBED598E831F99FE75440FA /* [CP] Embed Pods Frameworks */,
+				F8743D98810373C629FD6A40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D2E09B1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperTests" */;
 			buildPhases = (
+				FABF7BF55453419D71D7D3C4 /* [CP] Check Pods Manifest.lock */,
 				88D2E0801DFCCBEF00947DA4 /* Sources */,
 				88D2E0811DFCCBEF00947DA4 /* Frameworks */,
 				88D2E0821DFCCBEF00947DA4 /* Resources */,
+				76A9BF975961954F28A887DD /* [CP] Embed Pods Frameworks */,
+				77D7DCBBA9B58CED4486D4B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88D2E09E1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperUITests" */;
 			buildPhases = (
+				2F8E4B9D1FCF3AC22FD5FC17 /* [CP] Check Pods Manifest.lock */,
 				88D2E08B1DFCCBEF00947DA4 /* Sources */,
 				88D2E08C1DFCCBEF00947DA4 /* Frameworks */,
 				88D2E08D1DFCCBEF00947DA4 /* Resources */,
+				AF286A41A96550EA494B8E4E /* [CP] Embed Pods Frameworks */,
+				77128A9F157FD82973843A05 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +306,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25F2FFD3534E9537D92629E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2F8E4B9D1FCF3AC22FD5FC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DBED598E831F99FE75440FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelper/Pods-EvernoteTagHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A9BF975961954F28A887DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelperTests/Pods-EvernoteTagHelperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77128A9F157FD82973843A05 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelperUITests/Pods-EvernoteTagHelperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77D7DCBBA9B58CED4486D4B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelperTests/Pods-EvernoteTagHelperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF286A41A96550EA494B8E4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelperUITests/Pods-EvernoteTagHelperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8743D98810373C629FD6A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvernoteTagHelper/Pods-EvernoteTagHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FABF7BF55453419D71D7D3C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88D2E06F1DFCCBEE00947DA4 /* Sources */ = {
@@ -403,6 +592,7 @@
 		};
 		88D2E0991DFCCBEF00947DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87FFFF73E4B98529CEA225A6 /* Pods-EvernoteTagHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -410,12 +600,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EvernoteTagHelper/EvernoteTagHelper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		88D2E09A1DFCCBEF00947DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8368A332BE1DAEEB2DB32CC8 /* Pods-EvernoteTagHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -423,12 +615,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.rosalia.EvernoteTagHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EvernoteTagHelper/EvernoteTagHelper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		88D2E09C1DFCCBEF00947DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FD99A0C44BD494E8579337 /* Pods-EvernoteTagHelperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -444,6 +638,7 @@
 		};
 		88D2E09D1DFCCBEF00947DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C7D632498CC19F57773760 /* Pods-EvernoteTagHelperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +654,7 @@
 		};
 		88D2E09F1DFCCBEF00947DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B2E129FF02BEA8C65DE62C /* Pods-EvernoteTagHelperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -473,6 +669,7 @@
 		};
 		88D2E0A01DFCCBEF00947DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6E78564EF0AB3A8181D2CA5 /* Pods-EvernoteTagHelperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;

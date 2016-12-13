@@ -8,6 +8,7 @@
 
 import Cocoa
 import AppKit
+import Evernote_SDK_Mac
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
@@ -17,22 +18,43 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     var _app: NSApplication!
     // Need to keep a reference to the panel, or else it dies immediately
     var _panel = PopupPanel()
+    var _tags: [String] = []
     
     func windowDidResignKey(_ notification: Notification) {
-        let openDuration = 0.15
+        let openDuration = 0.0
         NSAnimationContext.beginGrouping()
         NSAnimationContext.current().duration = openDuration
         _panel.animator().alphaValue = 0;
         NSAnimationContext.endGrouping()
 
         _panel.orderOut(nil)
+        
+        //TODO: we only want to do this on enter press...if we do this on any resign key operation, the cursor may move
+        // FIXME: we can hold onto the cursor using the AccessibilityCursor 
+        if _panel._enterPressed {
+            let axh = AccessabilityCursor()
+            let _ = axh.startAtSystemWideElement()
+                       .select(kAXFocusedUIElementAttribute)?
+                       .typeCharacters(_panel._text.stringValue)
+        }
     }
 
     
     func openHelperPanelAtPoint(point: NSPoint) {
         _panel.delegate = self
-        let panelRect = NSRect(origin: CGPoint(x:point.x, y:point.y - 50), size: NSSize(width: 140, height: 50))
-        let openDuration = 0.15
+        _panel.setTags(tags: _tags.map({(s) in
+            if s.hasPrefix("_") {
+                let index = s.index(s.startIndex, offsetBy: 1)
+                return s.substring(from: index)
+
+            } else {
+                return s
+            }
+        }))
+            
+        _panel._enterPressed = false
+        let panelRect = NSRect(origin: CGPoint(x:point.x, y:point.y - 20), size: NSSize(width: 100, height: 20))
+        let openDuration = 0.0
         
         NSApp.activate(ignoringOtherApps: false)
         _panel.makeKeyAndOrderFront(nil)
@@ -42,7 +64,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         _panel.animator().setFrame(panelRect, display:true)
         _panel.animator().alphaValue = 1;
         NSAnimationContext.endGrouping()
-        
 
         _panel.focusTextField(openDuration)
     
@@ -157,7 +178,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         if event.characters == "_" {
             if let app = NSWorkspace.shared().frontmostApplication,
                let name = app.localizedName {
-                if true  || name.contains("Evernote") {
+                if name.contains("Evernote") {
                     NSLog("\(event)")
                     let rect = self.axGetCursorPosition()
                     if let r = rect {
@@ -174,12 +195,71 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     func printEvent(event: NSEvent) {
         print("\(event)")
     }
+    
+    func readEvernoteConfigFile() {
+    }
+
+    func loadTagsFromEvernote() {
+        
+        let path = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".evernote_creds")
+        
+        var authToken = ""
+        var notestoreUrl = ""
+        do {
+            let text = try String(contentsOf: path, encoding: String.Encoding.utf8)
+            let lines = text.components(separatedBy: "\n")
+            authToken = lines[0]
+            notestoreUrl = lines[1]
+        }
+        catch {
+            NSLog("Unable to open credentials file")
+            exit(-1)
+        }
+        
+        let tagListNotebookName = "Meeting Notes"
+        let tagListNoteName = "All Tags"
+        
+        //TODO: this is a very fragile function.  needs better error checking, pulling out secret token, etc
+        let client = THTTPClient(url: URL(string: notestoreUrl))
+        let proto = TBinaryProtocol(transport: client)
+        let notestore = EDAMNoteStoreClient(with: proto)!
+        
+        let notebooks = notestore.listNotebooks(authToken) as! [EDAMNotebook]
+        let notebook = notebooks.first(where: { (e) -> Bool in
+            return e.name == tagListNotebookName
+        })!
+        
+        let filter = EDAMNoteFilter()
+        filter.notebookGuid = notebook.guid
+        filter.ascending = false
+        filter.order = Int32(NoteSortOrder_CREATED.rawValue)
+
+        let spec = EDAMNotesMetadataResultSpec()
+        spec.includeTitle = true
+        let meta = notestore.findNotesMetadata(authToken, filter, 0, 100, spec)!
+        let notes = meta.notes as! [EDAMNoteMetadata]
+        let note = notes.first(where: { (n) -> Bool in
+            return n.title == tagListNoteName
+        })!
+        
+        let content = notestore.getNoteContent(authToken, note.guid)!
+        let pat = "<div>([^<]+)</div>"
+        let regex = try! NSRegularExpression(pattern: pat, options: [])
+        let match = regex.firstMatch(in: content, options: [], range: NSRange(location: 0, length: content.characters.count))
+        
+        let range = match!.rangeAt(1)
+        let r = (content as NSString).substring(with: range)
+        let tags = r.components(separatedBy: "\n")
+        _tags = tags
+    }
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         print("\(aNotification.object)")
         let app = aNotification.object as! NSApplication
         _app = app
         print("Adding monitor")
-        
+
+        loadTagsFromEvernote()
         _monitor = NSEvent.addGlobalMonitorForEvents(matching: NSEventMask.keyDown, handler: self.handleGlobalKeyDown)
         //_debugMonitor = NSEvent.addGlobalMonitorForEvents(matching: NSEventMask.flagsChanged, handler: self.printEvent)
     }
