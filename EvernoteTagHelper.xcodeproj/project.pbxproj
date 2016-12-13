@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88A3893F1DFFA20E0086C2DA /* AccessabilityCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */; };
+		88A389411DFFD2220086C2DA /* PopupPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A389401DFFD2220086C2DA /* PopupPanel.swift */; };
 		88D2E0771DFCCBEF00947DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */; };
 		88D2E0791DFCCBEF00947DA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D2E0781DFCCBEF00947DA4 /* ViewController.swift */; };
 		88D2E07B1DFCCBEF00947DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88D2E07A1DFCCBEF00947DA4 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessabilityCursor.swift; sourceTree = "<group>"; };
+		88A389401DFFD2220086C2DA /* PopupPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupPanel.swift; sourceTree = "<group>"; };
 		88D2E0731DFCCBEF00947DA4 /* EvernoteTagHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvernoteTagHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88D2E0761DFCCBEF00947DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88D2E0781DFCCBEF00947DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				88D2E07A1DFCCBEF00947DA4 /* Assets.xcassets */,
 				88D2E07C1DFCCBEF00947DA4 /* Main.storyboard */,
 				88D2E07F1DFCCBEF00947DA4 /* Info.plist */,
+				88A3893E1DFFA20E0086C2DA /* AccessabilityCursor.swift */,
+				88A389401DFFD2220086C2DA /* PopupPanel.swift */,
 			);
 			path = EvernoteTagHelper;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 			files = (
 				88D2E0791DFCCBEF00947DA4 /* ViewController.swift in Sources */,
 				88D2E0771DFCCBEF00947DA4 /* AppDelegate.swift in Sources */,
+				88A3893F1DFFA20E0086C2DA /* AccessabilityCursor.swift in Sources */,
+				88A389411DFFD2220086C2DA /* PopupPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +504,7 @@
 				88D2E09A1DFCCBEF00947DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88D2E09B1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +513,7 @@
 				88D2E09D1DFCCBEF00947DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88D2E09E1DFCCBEF00947DA4 /* Build configuration list for PBXNativeTarget "EvernoteTagHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +522,7 @@
 				88D2E0A01DFCCBEF00947DA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
