@@ -32,14 +32,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         //TODO: we only want to do this on enter press...if we do this on any resign key operation, the cursor may move
         // FIXME: we can hold onto the cursor using the AccessibilityCursor 
         if _panel._enterPressed {
+            let tag = _panel._text.stringValue
             let axh = AccessabilityCursor()
             let _ = axh.startAtSystemWideElement()
                        .select(kAXFocusedUIElementAttribute)?
-                       .typeCharacters(_panel._text.stringValue)
+                       .typeCharacters(tag)
+            
+            if !_tags.contains(tag) {
+                _tags.append(tag)
+            }
         }
     }
 
-    
     func openHelperPanelAtPoint(point: NSPoint) {
         _panel.delegate = self
         _panel.setTags(tags: _tags.map({(s) in
@@ -53,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         }))
             
         _panel._enterPressed = false
-        let panelRect = NSRect(origin: CGPoint(x:point.x, y:point.y - 20), size: NSSize(width: 100, height: 20))
+        let panelRect = NSRect(origin: CGPoint(x:point.x + 1, y:point.y), size: NSSize(width: 100, height: 20))
         let openDuration = 0.0
         
         NSApp.activate(ignoringOtherApps: false)
@@ -67,47 +71,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
         _panel.focusTextField(openDuration)
     
-        /*_
-                NSWindow *panel = [self window];
-                
-                NSRect screenRect = [[[NSScreen screens] objectAtIndex:0] frame];
-                NSRect statusRect = [self statusRectForWindow:panel];
-                
-                NSRect panelRect = [panel frame];
-                panelRect.size.width = PANEL_WIDTH;
-                panelRect.size.height = POPUP_HEIGHT;
-                panelRect.origin.x = roundf(NSMidX(statusRect) - NSWidth(panelRect) / 2);
-                panelRect.origin.y = NSMaxY(statusRect) - NSHeight(panelRect);
-                
-                if (NSMaxX(panelRect) > (NSMaxX(screenRect) - ARROW_HEIGHT))
-                panelRect.origin.x -= NSMaxX(panelRect) - (NSMaxX(screenRect) - ARROW_HEIGHT);
-                
-                [NSApp activateIgnoringOtherApps:NO];
-                [panel setAlphaValue:0];
-                [panel setFrame:statusRect display:YES];
-                [panel makeKeyAndOrderFront:nil];
-                
-                NSTimeInterval openDuration = OPEN_DURATION;
-                
-                NSEvent *currentEvent = [NSApp currentEvent];
-                if ([currentEvent type] == NSLeftMouseDown)
-                {
-                    NSUInteger clearFlags = ([currentEvent modifierFlags] & NSDeviceIndependentModifierFlagsMask);
-                    BOOL shiftPressed = (clearFlags == NSShiftKeyMask);
-                    BOOL shiftOptionPressed = (clearFlags == (NSShiftKeyMask | NSAlternateKeyMask));
-                    if (shiftPressed || shiftOptionPressed)
-                    {
-                        openDuration *= 10;
-                        
-                        if (shiftOptionPressed)
-                        NSLog(@"Icon is at %@\n\tMenu is on screen %@\n\tWill be animated to %@",
-                        NSStringFromRect(statusRect), NSStringFromRect(screenRect), NSStringFromRect(panelRect));
-                    }
-                }
-                
-                [panel performSelector:@selector(makeFirstResponder:) withObject:self.searchField afterDelay:openDuration];
-        }
- */
     }
     
     func axGetCursorPosition() -> CGRect? {
@@ -250,7 +213,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         let range = match!.rangeAt(1)
         let r = (content as NSString).substring(with: range)
         let tags = r.components(separatedBy: "\n")
-        _tags = tags
+        // Sort the tags alphabetically
+        // TODO: maintain a MRU list
+        _tags = tags.sorted()
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

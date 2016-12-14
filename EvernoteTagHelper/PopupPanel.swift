@@ -33,7 +33,7 @@ class PopupTextField: NSTextField, NSTextFieldDelegate {
     }
 
     override func keyUp(with event: NSEvent) {
-        NSLog("Key: %d", event.keyCode)
+        //NSLog("Key: %d", event.keyCode)
         //NOTE: It's a little unclear when this is hit vs the insertNewline: command selector below.  I think it has to do with
         // the field editor and completion dialog.  In either case, supporting both get's us what we want
         if event.keyCode == UInt16(kVK_Return) {
@@ -62,6 +62,9 @@ class PopupTextField: NSTextField, NSTextFieldDelegate {
         } else if commandSelector.description == "moveDown:" {
             _fieldEditor.complete(nil)
             return true
+        } else if commandSelector.description == "deleteBackward:" && self.stringValue.isEmpty {
+            self.window?.resignKey()
+            return true
         } else {
             return false
         }
@@ -82,6 +85,7 @@ class PopupPanel: NSPanel, PopupTextFieldDelegate {
         
         _text = PopupTextField(frame: frameRect)
         _text._stringSelectedFunc = self.enterPressed
+        _text.isBordered = false
 
         self.contentView?.addSubview(_text)
         self.hidesOnDeactivate = false
@@ -102,6 +106,7 @@ class PopupPanel: NSPanel, PopupTextFieldDelegate {
     }
 
     func focusTextField(_ delay: TimeInterval) {
+        _text.stringValue = ""
         self.perform(#selector(self.makeFirstResponder(_:)), with: _text, afterDelay:delay)
     }
     
